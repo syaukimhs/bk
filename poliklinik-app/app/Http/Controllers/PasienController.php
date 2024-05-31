@@ -13,6 +13,12 @@ class PasienController extends Controller
         return view('pasien',compact('data'));
     }
 
+    public function riwayatpasien(){
+        $data = Pasien::all();
+        // dd($data);
+        return view('riwayatpasien',compact('data'));
+    }
+
     public function insertpasien(Request $request){
         Pasien::create($request->all());
         return redirect()->route('pasien');

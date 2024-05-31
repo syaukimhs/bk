@@ -6,6 +6,10 @@ use App\Http\Controllers\ObatController;
 use App\Http\Controllers\DokterController;
 use App\Http\Controllers\PasienController;
 use App\Http\Controllers\PoliController;
+use App\Http\Controllers\JadwalPeriksaController;
+use App\Http\Controllers\PeriksaController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DaftarPoliController;
 // use App\Http\Controllers\LoginDokterController;
 
 
@@ -41,6 +45,10 @@ Route::get('/dokterpage', function (){
     return view('dokterpage');
 })->middleware('auth');
 
+Route::get('/pasienmenu', function(){
+    return view('pasienmenu');
+})->middleware('auth');
+
 
 // route view
 
@@ -64,6 +72,15 @@ Route::get('/registerdokter', [LoginController::class, 'registerdokter'])->name(
 Route::post('/registerdokters', [LoginController::class, 'registerdokters'])->name('registerdokters');
 
 // login dan register dokter
+
+//login dan register pasien
+Route::get('/loginpasien', [LoginController::class, 'loginpasien'])->name('loginpasien');
+Route::post('/loginpasienproses', [LoginController::class, 'loginpasienproses'])->name('loginpasienproses');
+
+Route::get('/registerpasien', [LoginController::class, 'registerpasien'])->name('registerpasien');
+Route::post('/registerpasiens', [LoginController::class, 'registerpasiens'])->name('registerpasiens');
+
+// login dan register pasien
 
 
 // tambah data obat
@@ -99,3 +116,27 @@ Route::get('/tampilpoli/{id}',[PoliController::class,'tampilpoli'])->name('tampi
 Route::post('/editpoli/{id}',[PoliController::class,'editpoli'])->name('editpoli');
 Route::get('/hapuspoli/{id}',[PoliController::class,'hapuspoli'])->name('hapuspoli');
 // tambah data poli
+
+// halaman jadwal periksa
+Route::get('/jadwalperiksa',[JadwalPeriksaController::class,'jadwalperiksa'])->name('jadwalperiksa');
+Route::get('/tambahjadwalperiksa',[JadwalPeriksaController::class,'tambahjadwalperiksa'])->name('tambahjadwalperiksa');
+Route::get('/tampiljadwal',[JadwalPeriksaController::class,'tampiljadwal'])->name('tampiljadwal');
+// Route::post('/insertjadwal',[JadwalPeriksaController::class,'insertjadwal'])->name('insertjadwal');
+// halaman jadwal periksa
+
+// periksa pasien
+Route::get('/periksa',[PeriksaController::class,'periksa'])->name('periksa');
+// periksa pasien
+
+// riwayat pasien
+Route::get('/riwayatpasien',[PasienController::class,'riwayatpasien'])->name('riwayatpasien');
+// riwayat pasien
+
+// riwayat pasien
+Route::get('/profile',[ProfileController::class,'profile'])->name('profile');
+Route::post('/editprofil/{id}',[ProfileController::class, 'editprofil'])->name('editprofil');
+// riwayat pasien
+
+// daftar poli
+Route::get('/daftarpoli',[DaftarPoliController::class,'daftarpoli'])->name('daftarpoli');
+// daftar poli

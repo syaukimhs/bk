@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>AdminLTE 3 | Daftar Poli</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -177,7 +177,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="{{ asset('tamplate/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Dokter</span>
+      <span class="brand-text font-weight-light">Pasien</span>
     </a>
 
     <!-- Sidebar -->
@@ -249,47 +249,20 @@
           </li>-->
 
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="/pasienmenu" class="nav-link ">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
-                <span class="right badge badge-danger">dokter</span>
+                <span class="right badge badge-warning">Pasien</span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/jadwalperiksa" class="nav-link">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Jadwal Periksa
-                <span class="right badge badge-danger">dokter</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/periksa" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Memeriksa Pasien
-                <span class="right badge badge-danger">dokter</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/riwayatpasien" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Riwayat Pasien
-                <span class="right badge badge-danger">dokter</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/profile" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Profil
-                <span class="right badge badge-danger">dokter</span>
+                Daftar Poli
+                <span class="right badge badge-warning">pasien</span>
               </p>
             </a>
           </li>
@@ -298,7 +271,7 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Logout
-                <span class="right badge badge-danger">dokter</span>
+                <span class="right badge badge-warning">pasien</span>
               </p>
             </a>
           </li>

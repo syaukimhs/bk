@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>AdminLTE 3 | Riwayat Pasien</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -249,7 +249,7 @@
           </li>-->
 
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="/dokterpage" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -276,7 +276,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/riwayatpasien" class="nav-link">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Riwayat Pasien
@@ -285,7 +285,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/profile" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Profil
